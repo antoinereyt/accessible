@@ -12,4 +12,4 @@ matrix:
     - elixir: 1.10
       otp_release: 22.0
 script:
-  - "MIX_ENV=test mix do deps.get, compile, test"
+  - "MIX_ENV=test mix do deps.get, compile --warnings-as-errors, test"
